@@ -1,38 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F2F2">
 
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion des Clients"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Nom -->
     <EditText
         android:id="@+id/etNom"
-        android:hint="Nom client"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:hint="Nom du client"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#9E9E9E"/>
 
+    <!-- Ville -->
     <EditText
         android:id="@+id/etVille"
-        android:hint="Ville"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:hint="Ville"
+        android:padding="10dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#9E9E9E"/>
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:text="Ajouter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btnUp"
-        android:text="Modifier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
 
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Ajouter"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#616161"
+            android:layout_marginEnd="8dp"/>
 
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Modifier"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- ListView -->
     <ListView
         android:id="@+id/lvClients"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:divider="#BDBDBD"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"/>
 
 </LinearLayout>
