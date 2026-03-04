@@ -80,10 +80,10 @@ MVC_APP/
 ```
 ### Screenshot
 <div align="center">
-  <img src="screenshots/home_screen.png" width="300"/>
+  <img src="screenshots/home_screen.png" width="800"/>
 </div> <br>
 <div align="center">
-  <img src="screenshots/add_client.png" width="300"/>
+  <img src="screenshots/add_client.png" width="800"/>
 </div>
 
 ### Installation
