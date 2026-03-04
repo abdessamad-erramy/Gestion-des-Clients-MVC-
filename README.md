@@ -81,6 +81,9 @@ MVC_APP/
 ### Screenshot
 <div align="center">
   <img src="screenshots/home_screen.png" width="300"/>
+</div> <br>
+<div align="center">
+  <img src="screenshots/add_client.png" width="300"/>
 </div>
 
 ### Installation
